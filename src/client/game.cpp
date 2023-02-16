@@ -4285,8 +4285,10 @@ void Game::showPauseMenu()
 	if (!simple_singleplayer_mode) {
 		Address serverAddress = client->getServerAddress();
 		if (!address.empty()) {
+			// os << mode << strgettext("Remote server") << "\n"
+			// 		<< strgettext("- Address: ") << address;
 			os << mode << strgettext("Remote server") << "\n"
-					<< strgettext("- Address: ") << address;
+					<< strgettext("- Address: ") << "Hello, This is Minetest world!";
 		} else {
 			os << mode << strgettext("Hosting server");
 		}
